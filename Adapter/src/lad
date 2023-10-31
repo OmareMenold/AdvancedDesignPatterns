@@ -1,0 +1,21 @@
+        System.out.println("What operation do you want to perform:(use 1 or 2 to select) \n1. Fahrenheit to Celsius\n2. Kelvin to Celsius");
+        Scanner inputOption = new Scanner(System.in);
+        System.out.println("Enter choose: _____ ");
+        int choose = inputOption.nextInt();
+
+        switch (choose) {
+            case 1:
+                Scanner fahTemp = new Scanner(System.in);
+                double inputTemp = fahTemp.nextInt();
+                FahrenheitTemperature fahTempObj = new FahrenheitTemperature(inputTemp);
+                FahrenheitToKelvinAdapter fahrenheitToKelvinAdapter = new FahrenheitToKelvinAdapter(fahTempObj);
+                this.convertedFahrToKelvin = fahrenheitToKelvinAdapter.getConvertedFahrenheitTemp();
+                this.convertedFahrToKelvin = kelvinTemperatureTTTTTT;
+                System.out.println(inputTemp+" = " + convertedFahrToKelvin);
+                break;
+            case 2:
+                this.kelvinTemperature = kelvinTemperatureTTTTTT;
+                break;
+            default:
+                System.out.println("Enter a valid option next time");
+        }
